@@ -46,53 +46,28 @@ const appRouter = createBrowserRouter([
   // admin ka liya
   {
     path: "/admin/companies",
-    element: (
-      <ProtectedRoute>
-        {" "}
-        <Companies />
-      </ProtectedRoute>
-    ),
+    element: <Companies />,
   },
   {
     path: "/admin/companies/create",
-    element: (
-      <ProtectedRoute>
-        <CompanyCreate />
-      </ProtectedRoute>
-    ),
+    element: <CompanyCreate />,
   },
   {
     path: "/admin/companies/:id",
-    element: (
-      <ProtectedRoute>
-        <CompanySetup />
-      </ProtectedRoute>
-    ),
+    element: <CompanySetup />,
   },
   {
     path: "/admin/jobs",
-    element: (
-      <ProtectedRoute>
-        <AdminJobs />
-      </ProtectedRoute>
-    ),
+    element: <AdminJobs />,
   },
   {
     path: "/admin/jobs/create",
-    element: (
-      <ProtectedRoute>
-        <PostJob />
-      </ProtectedRoute>
-    ),
+    element: <PostJob />,
   },
 
   {
     path: "/admin/jobs/:id/applicants",
-    element: (
-      <ProtectedRoute>
-        <Applicants />
-      </ProtectedRoute>
-    ),
+    element: <Applicants />,
   },
 ]);
 export default function app() {
